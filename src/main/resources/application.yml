@@ -1,1 +1,4 @@
-spring.application.name=TusProtocol
+tus:
+  upload:
+    dir: $tusStoragePath
+    expiration: 86400000

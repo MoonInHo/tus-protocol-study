@@ -17,8 +17,11 @@ repositories {
 
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation("me.desair.tus:tus-java-server:1.0.0-2.0")
+    implementation group: 'me.desair.tus', name: 'tus-java-server', version: '1.0.0-3.0'
+    implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
 }
 
 tasks.named('test') {
